@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background-color: rgb(238, 175, 175);
+        }
+
+        h1 {
+            color: rgb(32, 32, 219);
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .name {
+            text-align: center;
+            width: 280px;
+            height: 200px;
+            border: 2px solid black;
+            position: relative;
+            background-color: white;
+            animation-name: vishesh;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            transition: all;
+
+        }
+
+        button {
+            margin: 20px;
+            background-color: rgb(49, 49, 212);
+            border: 2px solid rgb(49, 49, 212);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            margin: 5px;
+
+        }
+
+        input[type='text'] {
+
+            margin-top: 50px;
+        }
+
+        @keyframes vishesh {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-color: red;
+            }
+
+            25% {
+                top: 220px;
+                left: 0px;
+                background-color: rgb(156, 83, 224);
+                transform: rotate(25deg);
+            }
+
+            50% {
+                top: 210px;
+                left: 1000px;
+                background-color: rgb(209, 88, 128);
+                transform: rotate(150deg);
+            }
+
+            75% {
+                top: 0px;
+                left: 1000px;
+                background-color: rgb(47, 197, 197);
+                transform: rotate(300deg);
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+                background-color: rgb(236, 236, 8);
+            }
+        }
+
+        @media (min-width:310px) and (max-width:914px) {
+
+            
+        .name {
+            text-align: center;
+            width: 280px;
+            height: 200px;
+            border: 2px solid black;
+            position: relative;
+            background-color: white;
+            animation-name: vishesh;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            transition: all;
+
+        }
+
+
+            .name {
+                width: 200px;
+                height: 150px;
+            }
+
+            input[type='text'] {
+                margin-top: 5px;
+            }
+
+            h1 {
+                color: rgb(32, 32, 219);
+                text-align: center;
+            }
+            button{
+                margin-top:0px;
+            }
+
+            @keyframes vishesh {
+                0% {
+                    top: 0px;
+                    left: 0px;
+                    background-color: red;
+                }
+
+                25% {
+                    top: 550px;
+                    left: 0px;
+                    background-color: rgb(156, 83, 224);
+                    transform: rotate(25deg);
+                }
+
+                50% {
+                    top: 550px;
+                    left: 180px;
+                    background-color: rgb(209, 88, 128);
+                    transform: rotate(150deg);
+                }
+
+                75% {
+                    top: 0px;
+                    left: 180px;
+                    background-color: rgb(47, 197, 197);
+                    transform: rotate(300deg);
+                }
+
+                100% {
+                    top: 0px;
+                    left: 0px;
+                    background-color: rgb(236, 236, 8);
+                }
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>facebook</h1>
+
+    <div class="name">
+        Name:<input type="text" placeholder="Enter the name ">
+        <br>
+        password:<input type="password" placeholder="Enter the password">
+        <br>
+        D.O.B:<input type="date"><br>
+        <button>Log in</button>
+    </div>
+
+</body>
+
+</html>
